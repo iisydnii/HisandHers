@@ -1,0 +1,89 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Estimate Page";
+}
+<header class="masthead align-items-center">
+            <!-- Heading Row-->
+            <div class="row gx-4 gx-lg-5 align-items-center my-5 center-page">
+                <div class="col-lg-5">
+                    <h1 class="font-weight-light">His & Her's</h1>
+                    <h2 class="font-weight-light">Home and Office Cleaning</h2>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <form action="action_page.php">
+                <div class="input">
+                    <div style="margin: auto; color: rgba(0,0,0,0.6);">
+                        <h3 >Free Estimate</h3>
+                    </div> 
+                </div>
+                <div class="input"> 
+                    <p>Insterested in a clean home, worry free? Schedule a estimate to today! We understand our everyday services may not fit your needs, but spring cleaning is too much. If there are any special requests; let us know!</p>
+                </div>
+
+                <!-- Name -->
+                <div class="input"> 
+                    <input class="input" type="text" id="fname" name="firstname" placeholder="First Name">
+                
+                    <input class="input" type="text" id="lname" name="lastname" placeholder="Last Name">
+                </div>
+                <!-- Contact -->
+                <div class="input"> 
+                    <input class="input" type="text" id="phone" name="phone" placeholder="Phone Number">
+
+                    <input class="input" type="text" id="email" name="email" placeholder="Email">
+                </div>
+
+                <!-- Address -->
+                <div class="input">
+                    <input class="input" type="text" id="address1" name="address1" placeholder="Address 1">
+                </div>
+
+                <div class="input">
+                    <input class="input" type="text" id="address2" name="address2" placeholder="Address 2">
+                </div>
+
+                <div class="input">
+                    <input class="input" type="text" id="city" name="city" placeholder="City">
+                </div>
+
+                <div class="input">
+                    <input class="input" type="text" id="state" name="state" placeholder="State">
+                    <input class="input" type="text" id="zip" name="zip" placeholder="Zipcode">
+                </div>
+
+                <!-- Cleaning Type/ frequency -->
+                <div class="input"> 
+                    <!-- dropdown -->
+                    <select id="frequency" placeholder="Frequency">
+                        
+                    </select>
+                    <!-- dropdown -->
+                    <select id="type" placeholder="Type">
+                        
+                    </select>
+                </div>
+                
+                <!-- Date/Time -->
+                <div class="input">
+                    <input type="date" id="date" name="date" class="input">
+
+                    <select id="time" placeholder="Time">
+                        
+                    </select>
+                </div>
+                <!-- Special Requests -->
+                <div class="input">
+                    <textarea type="text" id="requests" name="requests" placeholder="Special Requests" style="height:100px"></textarea>
+                </div>
+            </form>
+            <!-- Submit Button -->
+            <div class="input">
+                <input type="submit" value="Submit">
+            </div>
+            <br>
+            
+          </div>

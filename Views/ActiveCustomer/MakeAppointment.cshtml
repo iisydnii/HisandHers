@@ -1,0 +1,84 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Make Appointment Page";
+}
+<div class="container">
+    <form action="action_page.php">
+        <div class="input">
+            <div style="margin: auto; color: rgba(0,0,0,0.6);">
+                <h3 style="text-align:center">Request Appointment</h3>
+                <p>Want to restart our services? </p> 
+                <p>Fill out some basic information and submit your request. If you have not recieved 
+                    an estimate for a property, we can not create your appointment. Please see the estimate page. 
+                    Our team works hard to provide exceptional services to our customers. We will notify you when 
+                    your request has been processed by email. If there are any problems with the date and time 
+                    scheduled we will give you a call. Otherwise we will send an email with instructions and
+                    begin services based on the information in the request. </p>
+            </div> 
+        </div>
+        <!-- Name -->
+        <div class="input"> 
+            <input class="input" type="text" id="fname" name="firstname" placeholder="First Name">
+                
+            <input class="input" type="text" id="lname" name="lastname" placeholder="Last Name">
+        </div>
+        <!-- Contact -->
+        <div class="input"> 
+            <input class="input" type="text" id="phone" name="phone" placeholder="Phone Number">
+
+            <input class="input" type="text" id="email" name="email" placeholder="Email">
+        </div>
+
+        <div class="input" style="justify-content: flex-start"> 
+            <p>Select Property:</p>
+        </div>
+        <!-- Address -->
+        <div class="input"> 
+                    
+            <!-- dropdown -->
+            <select id="property" placeholder="Property" style="width: 100%">
+                        
+            </select>
+        </div>
+
+        <!-- Cleaning Type/ frequency -->
+        <div class="input" style="justify-content: flex-start"> 
+            <p>Select Frequency and Type of Service:</p>
+        </div>
+        <div class="input"> 
+            <!-- dropdown -->
+
+            <select id="frequency" placeholder="Frequency">
+                        
+            </select>
+            <!-- dropdown -->
+            <select id="type" placeholder="Type">
+                        
+            </select>
+        </div>
+                
+        <!-- Date/Time -->
+        <div class="input" style="justify-content: flex-start"> 
+            <p>Select Date and Time:</p>
+        </div>
+        <div class="input">
+
+            <input type="date" id="date" name="date" class="input">
+
+            <select id="time" placeholder="Time">
+                        
+            </select>
+        </div>
+        <!-- Special Requests -->
+        <div class="input">
+            <textarea type="text" id="requests" name="requests" placeholder="Special Requests" style="height:100px"></textarea>
+        </div>
+    </form>
+    <!-- Submit Button -->
+    <div class="input">
+        <input type="submit" value="Submit">
+    </div>
+    <br>
+</div>

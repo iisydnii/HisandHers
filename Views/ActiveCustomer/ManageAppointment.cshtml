@@ -1,0 +1,90 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Manage Appointments Page";
+}
+<div class="container">
+    <form action="action_page.php">
+        <div class="input">
+            <div style="margin: auto; color: rgba(0,0,0,0.6);">
+                <h3 style="text-align:center">Manage Appointment</h3>
+            </div> 
+        </div>
+        <!-- Address -->
+        <div style="width: 50%; margin:auto; display: flex; justify-content: flex-end; align-items: baseline;"> 
+            <p >Select Property:</p>
+                    
+            <select id="property" placeholder="Property" style="width: 70%;">
+                        
+            </select>
+        </div>
+        <br />
+        <hr class="roundedline"/>
+        <br />
+        <!-- Date/Time -->
+        <div style="width: 80%; margin:auto"><h5  style="justify-content: flex-start">Reschedule Appointment</h5></div>
+        <div class="input"> 
+            <p>We understand things happen. If you need to reschedule, we will do our best to fulfill your need to change the appointment. 
+                The change will be considered a request. We will notify you when 
+                    your request has been processed by email. If there are any problems with the date and time 
+                    scheduled we will give you a call. Otherwise we will send an email with instructions and
+                    begin services based on the information in the request. </p>
+        </div>
+        <div class="input">
+            <input type="date" id="date" name="date" class="input">
+
+            <select id="time" placeholder="Time">
+                        
+            </select>
+        </div>
+        <div style="width: 80%; margin:auto">
+            <input type="checkbox" id="allApp" name="allApp">
+            <label for="allApp"> For all future appointments</label>
+        </div>
+        <!-- Submit Button -->
+        <div class="input">
+            <input type="submit" value="Save">
+        </div>
+        <br />
+        <hr class="roundedline"/>
+        <br />
+        <!-- Contact -->
+        <div style="width: 80%; margin:auto"><h5>Change Contact Information</h5> </div>
+        <div class="input"> 
+            <p>The save only changes the contact information for the appointment! If you need to permanently change your 
+                contact information click permanent change.</p>
+        </div>
+        <div class="input"> 
+            <input class="input" type="text" id="phone" name="phone" placeholder="Phone Number">
+
+            <input class="input" type="text" id="email" name="email" placeholder="Email">
+        </div>
+
+        <!-- Submit Button -->
+        <div class="input" >
+            <input type="submit" value="Permanent Change" style="background-color:red; margin-right: 2%;">
+            <input type="submit" value="Save">
+        </div>
+                    
+        <br />
+        <hr class="roundedline"/>
+        <br />
+    </form>
+    <!-- Submit Button -->
+    <div style="width: 80%; margin:auto"><h5>Danger Zone</h5> </div>
+    <div class="input"> 
+            <p>This button will only delete selected appointment. This is permanent, but if done on accident please contact us within the next day and we will reverse it. After the 24 hours we can not guarantee this time slot's availablity.</p>
+    </div>
+    <div style="width: 80%; margin:auto">
+        <input style="background-color:red; justify-content: flex-start" type="submit" value="Cancel Appointment">
+    </div>
+    <br />
+        <div class="input"> 
+            <p>This button will delete ALL appointments for that property. This is permanent, but if done on accident please contact us within the next day and we will reverse it. After the 24 hours we can not guarantee this time slot's availablity.</p>
+    </div>
+    <div style="width: 80%; margin:auto">
+        <input style="background-color:red; justify-content: flex-start" type="submit" value="Cancel ALL">
+    </div>
+    <br>
+</div>
